@@ -1,0 +1,304 @@
+header{
+    font-family: Helvetica;
+    width: 480px;
+    margin: 0 auto;
+  }
+  ul{
+    list-style: none;
+  }
+  #menu li>a{
+    background-color: rgba(247, 131, 208, 0.815);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+  }
+  #menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center
+  }
+  #menu>li>ul{
+    display: none;
+  }
+  #menu>li:hover>ul {
+    display:block;
+  }
+  .logo{
+      align-items: flex-start;
+      float:right;
+     
+      
+  }
+  .logo img{
+      height: 10rem;
+  }
+  main{
+      padding: 15rem 0 ;
+      background-color: rgb(253, 247, 253);
+  }
+  h1{
+      font-size: 2rem;
+      font-weight:bold;
+      text-align: center;
+      text-transform: uppercase;
+
+  }
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+    padding: 0% 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    margin: 0.5rem;
+
+  }
+  .formulario label{
+    margin-bottom: 0.2rem;
+    color: rgb(4, 26, 54);
+    padding-left: 0.2rem;
+   
+  }
+  .enviar{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .enviar button{
+    padding: 0.2rem ;
+    font-size: 2rem;
+  }
+  .intro{
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    padding: 0.2rem ;
+  }
+  body{
+    background-color: rgb(216, 201, 216);
+    background-image: url(fondo.jpg);
+    
+  }
+  
+  
+  .contener{
+    width: 210%;
+    display: flex;
+   
+    
+  }
+  .tarjeta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%)
+  }
+  .tarjeta img{
+    width: 100%;
+    height: 210px;
+  }
+  .tarjeta.contenedor{
+    padding: 15px;
+    text-align:justify;
+  }
+  .tarjeta.contenedor p{
+    line-height: 1.5;
+  }
+  .tarjeta.contenedor h3{
+    font-weight: 400;
+       
+
+
+  }
+  .tarjeta.contenedor a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #281553;
+    border: 1px solid #281553;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+  }
+  .tarjeta.contenedor a:hover{
+    background:#281553; 
+  }
+  .contacto{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+
+  .contacto h1{
+    text-align: center;
+    font-size: 5em;
+  }
+  .contacto p{
+    font-size: 1.5em;
+  }
+  .slider{
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 300%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 10%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 200px;
+    height: 300px;
+}
+
+/*---CSS for manual navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: blueviolet;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/*
+/*CSS for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.navigation-auto div{
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: red;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: red;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: red;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: red;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: red;
+}
+
+/*---Dark Theme---*/
+.dark-theme-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    border-color: yellow;
+    color: violet;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transform: all 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme-btn:hover{
+    background-color: black;
+    color: yellow;
+}
+
+.dark-mode{
+    background-color: rgb(31, 31, 31);
+    color: black;
+}
+ 
+ 
+
+  

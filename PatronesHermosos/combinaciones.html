@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/sTel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Document</title>
+</head>
+<header>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Quienes Somos</a></li>
+        <li><a href="pasteles.html"> Pasteles</a>
+          <ul>
+            <li><a href="sabores.html">Sabores</a></li>
+            <li><a href="combinaciones.html">Combinar sabores </a></li>
+            <li><a href="adornos.html">Adornos</a></li>
+          </ul>  
+        </li>
+        <li><a href="Pedidos.html">PEDIDOS</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="" class="logo"> <img src="img/logo.ico" > </a>
+  </header>
+<body data-dark>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="img/fresa1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/fresa2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/fresa3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/fresa4.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+
+        </div>
+
+       <h1>Fresa con chocolate</h1>
+    </div>
+
+    <script>
+        let counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },3000);
+    </script>
+
+    <script src="index.js" type="module"></script>
+
+
+    
+</html>

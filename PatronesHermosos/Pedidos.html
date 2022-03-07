@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/sTel.css">
+    <title>Document</title>
+</head>
+<header>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Quienes Somos</a></li>
+        <li><a href="pasteles.html"> Pasteles</a>
+          <ul>
+            <li><a href="sabores.html">Sabores</a></li>
+            <li><a href="combinaciones.html">Combinar sabores </a></li>
+            <li><a href="adornos.html">Adornos</a></li>
+          </ul>  
+        </li>
+        <li><a href="Pedidos.html">PEDIDOS</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="" class="logo"> <img src="img/logo.ico" > </a>
+  </header>
+<body>
+  <main>
+    <h1>Por favor llena tus datos</h1>
+    <form >
+      <div class="formulario"> 
+        <label> Nombre </label>
+        <input type="text" name="nombre" required>
+        </div>
+        <div class="formulario"> 
+          <label> Apellidos </label>
+          <input type="text" name="Apellidos" required>
+          </div>
+          <div class="formulario"> 
+            <label> Dirección </label>
+            <input type="text" name="Dirección" required>
+            </div>
+            <div class="formulario"> 
+              <label> Correo electronico </label>
+              <input type="email"   name="Correo electronico" required>
+            </div>
+              <div class="formulario"> 
+                <label> Numero de telefono </label>
+                <input type="number"   name="Numero de telefono" required>
+              </div>
+              <div class="formulario"> 
+                <label> Fecha de entrega </label>
+                <input type="date"   name="Fecha de entrega" required>
+              </div>
+              <div class="formulario">
+              <label> Sabores </label>
+              <select >
+                <option selected disabled> Seleccione una opción</option>
+                <option>Chocolate</option>
+                <option>Vianilla</option>
+                <option>Limón </option>
+              </select>
+              </div>
+              <div class="formulario">
+                <label> Sabores combinados </label>
+                <select >
+                  <option selected disabled> Seleccione una opción</option>
+                  <option > Sin combinación</option>
+                  <option>Chocolate con fresas</option>
+                  <option>Vianilla con nutella</option>
+                  <option>Limón con lechera </option>
+                </select>
+                </div>
+                <div class="formulario">
+                  <label> Adornos </label>
+                  <select >
+                    <option selected disabled> Seleccione una opción</option>
+                    <option>Velas</option>
+                    <option>Figuras de acción </option>
+                    <option> Fondue </option>
+                    <option>Texto escrito</option>
+                  </select>
+                  </div>
+                  <div class="formulario">
+                    <label> Adornos extras </label>
+                    <select >
+                      <option selected disabled> Seleccione una opción</option>
+                      <option > Sin adornos extras</option>
+                      <option>Velas y  figuras de acción</option>
+                      <option>Velas en forma de personajes </option>
+                      <option> Fondue y texto escrito </option>
+                      <option>Texto escrito y fruta</option>
+                    </select>
+                    </div>
+                    <div class="enviar">
+                      <button> ENVIAR </button>
+                    </div>
+
+    </form>
+  </main>
+
+</body>
+</html>
